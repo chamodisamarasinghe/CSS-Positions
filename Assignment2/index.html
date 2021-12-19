@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Simple Web Layout - Case 2</title>
     <link href="assets/css/normalize.css"rel="stylesheet">
+    <link href="assets/css/fonts/css/all.css" rel="stylesheet">
+
     <style>
         header{
             position: relative;
@@ -37,8 +39,11 @@
             color: red;
         }
 
+        body > main {
+            position: relative;
+        }
+
         main>nav{
-            border: solid rebeccapurple 2px;
             color: white;
             width: 270px;
             top: 0;
@@ -72,17 +77,15 @@
 
 
 
-        section>img{
+        main>section>section{
+            height: 300px;
             position: relative;
-            bottom: 820px;
-            left: 300px;
-
         }
 
-        section>p{
-            position: relative;
-            left: 300px;
-            bottom: 800px;
+        main>section>section>div{
+            position: absolute;
+            height: 100%;
+            width: calc(100%/ 3);
         }
 
         main > section > section > div:nth-child(1) {
@@ -116,6 +119,7 @@
             text-align: center;
             color: white;
             padding: 20px;
+           font-weight: bold;
         }
 
 
@@ -185,7 +189,7 @@
 </main>
 
 <footer>
-    <p>Developed By IJSE</p>
+    <p><small>Developed By IJSE</small></p>
 </footer>
 
 
