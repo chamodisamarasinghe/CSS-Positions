@@ -37,14 +37,40 @@
             color: red;
         }
 
-        nav>ul{
+        main>nav{
             border: solid rebeccapurple 2px;
             color: white;
-            width: 250px;
-            height: 800px;
+            width: 270px;
+            top: 0;
+            bottom: 0;
             background-color: rebeccapurple;
-            list-style: none;
+            position: absolute;
         }
+
+        main>nav>ul{
+            list-style: none;
+            font-size: 25px;
+            margin-top: 39px;
+        }
+
+        main > nav > ul > li > a {
+            text-decoration: none;
+            color: #f3f1f1;
+            padding-bottom: 4px;
+            margin-left: 13px;
+        }
+
+        main > nav > ul > li > a:hover {
+            color: orange;
+        }
+
+        main>section{
+            margin-left: 270px;
+            padding: 10px;
+            min-height: 587px;
+        }
+
+        
 
         section>img{
             position: relative;
@@ -68,6 +94,11 @@
             text-align: center;
             color: white;
         }
+
+
+
+
+
     </style>
 </head>
 <body>
@@ -86,10 +117,10 @@
 <main>
     <nav>
         <ul>
-            <li>Home</li>
-            <li>Service</li>
-            <li>Contacts</li>
-            <li>About Us</li>
+            <li><i class="fas fa-home"></i><a href="index.html">Home</a></li>
+            <li><i class="fas fa-globe-africa"></i><a href="index-1.html">Service</a></li>
+            <li><i class="fas fa-id-badge"></i><a href="index-2.html">Contacts</a></li>
+            <li><i class="fas fa-info-circle"></i><a href="#">About Us</a></li>
         </ul>
     </nav>
     <section>
