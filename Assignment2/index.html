@@ -70,7 +70,7 @@
             min-height: 587px;
         }
 
-        
+
 
         section>img{
             position: relative;
@@ -85,14 +85,37 @@
             bottom: 800px;
         }
 
-        footer>p{
-            border: solid grey 2px;
-            height: 30px;
-            position: relative;
-            bottom: 785px;
-            background-color: grey;
+        main > section > section > div:nth-child(1) {
+            border-right: 5px solid white;
+            left: 0;
+            background-image: url("assets/gif/work.gif");
+            background-size: cover;
+        }
+
+        main > section > section > div:nth-child(2) {
+            border-left: 5px solid white;
+            left: calc(100% / 3);
+            background-image: url("assets/gif/work.gif");
+            background-size: cover;
+        }
+
+        main > section > section > div:nth-child(3) {
+            left: calc((100% / 3) * 2);
+            border-left: 5px solid white;
+            background-image: url("assets/gif/work.gif");
+            background-size: cover;
+
+
+        body>footer{
+            height: 60px;
+            background-color: #585151;
+        }
+
+       body> footer>p{
+            margin-top: 0;
             text-align: center;
             color: white;
+            padding: 20px;
         }
 
 
@@ -126,18 +149,13 @@
     <section>
 
         <section>
-            <div>
-
-            </div>
+            <div></div>
+            <div></div>
+            <div></div>
         </section>
 
 
-        <section>
-                <img src="assets/gif/work.gif" width="400"  alt="">
-                <img src="assets/gif/work.gif" width="400" alt="">
-                <img src="assets/gif/work.gif" width="400" alt="">
 
-        </section>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci cumque debitis dignissimos dolorem
             dolores esse et in magni minus molestiae necessitatibus recusandae, sapiente tempora ullam! Cumque
             exercitationem necessitatibus quas.</p>
