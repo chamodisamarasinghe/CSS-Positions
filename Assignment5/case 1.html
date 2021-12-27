@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 2</title>
+    <link href="assests/css/normalize.css"rel="stylesheet">
+    <link href="assests/css/fonts/css/all.css" rel="stylesheet">
+    <style>
+        section {
+            width: 300px;
+            height: 300px;
+            border: 20px solid gray;
+            border-radius: 100%;
+            border-top: 20px solid red;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            background-color: #1d1e57;
+            font-family: Ubuntu;
+        }
+
+        section:hover{
+            transform: rotate(360deg);
+            transition: all 1s;
+            cursor: pointer;
+        }
+
+        section:hover h2{
+            transform: rotate(-360deg);
+            transition: all 1s;
+        }
+
+        section>h2{
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            width: max-content;
+            height: max-content;
+            color: white;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<section>
+    <h2>RWAD</h2>
+</section>
+</body>
+</html>
